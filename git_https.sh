@@ -17,7 +17,7 @@ spawn git push origin $BRANCH
     expect -nocase \"Username\" {
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
-	    spawn echo \"good\"
+	    send \"${PASSWORD}\n\"
         }
     }
 "
