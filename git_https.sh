@@ -18,8 +18,10 @@ spawn git push origin $BRANCH
     expect -nocase \"Username\" {
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
-	    send \"${PASSWORD}\"
-	    send \"\n\"
+	    send \"${PASSWORD}\n\"
+	    expect \"wthaasd\" {
+		\"*$\";
+	    } \"*$\";
 	    spawn sleep 3
 	    spawn echo \"exit\"
         }
