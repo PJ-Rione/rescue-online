@@ -12,14 +12,14 @@ cd $DIR
 git add *
 git commit -m $MESSAGE
 
-expect -c "
+expect -c　-d "
 set timeout 5
 spawn git push origin $BRANCH
     expect -nocase \"Username\" {
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
 	    send \"${PASSWORD}\n\"
-	    spawn sleep 3;gedit
+	    spawn sleep 3
 	    spawn echo \"exit\"
         }
     }
