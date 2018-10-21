@@ -21,7 +21,7 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
 	    send \"\n\"
 	    spawn sleep 3
-	    spawn echo \"exit\"
+	    spawn echo \"\n exit\"
         }
     }
 "
