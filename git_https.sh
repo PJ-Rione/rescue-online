@@ -20,7 +20,3 @@ spawn git push origin $BRANCH
 	
     }
 "
-echo "exit"
-echo $USERNAME
-echo $PASSWORD
-
