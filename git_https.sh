@@ -15,9 +15,9 @@ git commit -m $MESSAGE
 expect -c "
 spawn git push origin $BRANCH
     expect -nocase \"Username\" {
-	send \"$USERNAME\"
+	send \"$USERNAME\n\"
 	    expect -nocase \"Password\" {
-	    send \"$PASSWORD\"
+	    send \"$PASSWORD\n\"
         }
     }
 }
