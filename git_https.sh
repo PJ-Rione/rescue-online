@@ -10,10 +10,8 @@ cd $DIR
 #git checkout $BRANCH
 git add *
 git commit -m $MESSAGE
-git push origin $BRANCH
-
-echo "test"
 
 expect -c "
+spawn git push origin $BRANCH
 
 "
