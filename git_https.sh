@@ -15,3 +15,4 @@ expect -c "
 spawn git push origin $BRANCH
 exit 0
 "
+echo "exit"
