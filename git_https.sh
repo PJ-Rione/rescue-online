@@ -21,7 +21,11 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
 	    expect \"Invalid\" {
 		spawn echo \"\n\n git push Failed.\n please check Username & Password\n\"
+		exit 1
 	    }
         }
     }
+exit 0
 "
+
+echo *$
