@@ -6,8 +6,8 @@ MESSAGE=$2
 
 cd $DIR
 
-git branch $BRANCH
-git checkout $BRANCH
+#git branch $BRANCH
+#git checkout $BRANCH
 git add *
 git commit -m $MESSAGE
 git push origin $BRANCH
