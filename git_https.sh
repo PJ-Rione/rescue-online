@@ -19,10 +19,10 @@ spawn git push origin $BRANCH
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
 	    send \"${PASSWORD}\n\"
-	    expect \"Counting\" {
+	    expect \"Invalid\" {
 		\"*$\";
-		spawn echo \"Success\"
-	    } \"*$\"; spawn echo \"Failed\"
+		spawn echo \"Filed\"
+	    } \"*$\"; spawn echo \"Success\"
 	    spawn echo \"exit\"
         }
     }
