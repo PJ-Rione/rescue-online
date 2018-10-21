@@ -21,7 +21,8 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
 	    expect \"wthaasd\" {
 		\"*$\";
-	    }
+		spawn echo \"Success\"
+	    } \"*$\";
 	    spawn echo \"exit\"
         }
     }
