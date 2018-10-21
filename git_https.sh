@@ -13,6 +13,8 @@ git commit -m $MESSAGE
 
 expect -c "
 spawn git push origin $BRANCH
-exit 0
+expect -nocase \"Username\" {
+spawn echo \"good\"
+}
 "
 echo "exit"
