@@ -15,7 +15,10 @@ git commit -m $MESSAGE
 
 expect -c　 "
 set timeout 5
+spawn cd $DIR
+spawn git add *
 spawn git push origin $BRANCH
+spawn git commit -m $MESSAGE
     expect -nocase \"Username\" {
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
