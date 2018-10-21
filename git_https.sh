@@ -16,7 +16,7 @@ expect -c "
 set timeout 5
 spawn git push origin $BRANCH
     expect -nocase \"Username\" {
-	send \"${USERNAME}\n\"
+
 	
     }
 "
