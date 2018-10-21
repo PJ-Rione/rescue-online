@@ -20,6 +20,5 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
         }
     }
-}
 "
 echo "exit"
