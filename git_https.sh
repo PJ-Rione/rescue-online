@@ -21,7 +21,7 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
 	    expect \"Invalid\" {
 		spawn echo \"Failed\"
-	    } spawn echo \"Success\";
+	    }
         }
     }
 "
