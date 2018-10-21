@@ -19,7 +19,7 @@ spawn git push origin $BRANCH
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
 	    send \"${PASSWORD}\n\"
-	    expect -nocase \"Counting\" {
+	    expect \"Counting\" {
 	        \"*$\";
 	    } \"*$\";
         }
