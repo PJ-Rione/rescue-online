@@ -16,7 +16,12 @@ expect -c "
 set timeout 5
 spawn git push origin $BRANCH
     expect -nocase \"Username\" {
-
-	
+	send \"${USERNAME}\n\"
+	expect -nocase \"Password\" {
+	    send \"${PASSWORD}\n\"
+	    spawn sleep 3
+	    echo \"exit\"
+        }
     }
 "
+
