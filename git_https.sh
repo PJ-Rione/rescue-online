@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/usr/bin/expect -d
 
 DIR=$(cd $(dirname $0) && pwd)
 BRANCH=$1
@@ -13,12 +12,9 @@ cd $DIR
 git add *
 git commit -m $MESSAGE
 
-expect -c　 "
+expect -c "
 set timeout 5
-spawn cd $DIR
-spawn git add *
 spawn git push origin $BRANCH
-spawn git commit -m $MESSAGE
     expect -nocase \"Username\" {
 	send \"${USERNAME}\n\"
 	expect -nocase \"Password\" {
