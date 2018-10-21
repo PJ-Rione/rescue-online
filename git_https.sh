@@ -12,7 +12,7 @@ cd $DIR
 git add *
 git commit -m $MESSAGE
 
-expect -c　-d "
+expect　-d "
 set timeout 5
 spawn git push origin $BRANCH
     expect -nocase \"Username\" {
