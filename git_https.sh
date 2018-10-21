@@ -20,7 +20,7 @@ spawn git push origin $BRANCH
 	expect -nocase \"Password\" {
 	    send \"${PASSWORD}\n\"
 	    expect \"Invalid\" {
-		spawn echo \"\nFailed\n\"
+		spawn echo \"\n\nFailed\n\"
 	    }
         }
     }
