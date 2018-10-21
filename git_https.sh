@@ -21,7 +21,7 @@ spawn git push origin $BRANCH
 	    send \"${PASSWORD}\n\"
 	    expect -nocase \"Counting\" {
 	        \"*$\";
-	    }
+	    } \"*$\";
         }
     }
 "
