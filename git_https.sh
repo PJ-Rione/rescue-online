@@ -13,7 +13,7 @@ git commit -m $MESSAGE
 
 expect -c "
 spawn git push origin $BRANCH
-expect -nocase \"Username\" {
+expect -nocase \"Passssss\" {
 spawn echo \"good\"
 }
 "
