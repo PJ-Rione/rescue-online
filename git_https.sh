@@ -22,7 +22,6 @@ spawn git push origin $BRANCH
 	    expect \"wthaasd\" {
 		\"*$\";
 	    } \"*$\";
-	    spawn sleep 3
 	    spawn echo \"exit\"
         }
     }
