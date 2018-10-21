@@ -1,13 +1,12 @@
 #!/bin/bash
 
 DIR=$(cd $(dirname $0) && pwd)
-USER=$1
-BRANCH=$2
-MESSAGE=$3
+BRANCH=$1
+MESSAGE=$2
 
 cd $DIR
 
-git branch $USER
+git branch $BRANCH
 git checkout $BRANCH
 git add *
 git commit -m $MESSAGE
